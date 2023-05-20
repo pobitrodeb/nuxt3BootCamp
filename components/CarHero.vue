@@ -1,14 +1,6 @@
-  <!-- -- NAVBAR --  -->
-  <header
-    class="sticky top-0 z-50 flex justify-between item-center space-x-1 border-b bg-white p-4 shadow-md"
-  >
-    <a href="" class="text-3xl fontt-mono">cartrader</a>
-  </header>
-  <!-- -- NAVBAR --  -->
-
-<div class="">
-    <!-- --Start Home Hero --  -->
-    <div
+<template>
+  <!-- --Start Home Hero --  -->
+  <div
     class="relative h-screen w-100 items-center bg-no-repat bg-cover bg-bttom bg-[url('https://cdn.pixabay.com/photo/2012/11/02/13/02/car-63930_960_720.jpg')]"
   >
     <div class="z-10 absolute w-full h-full flex justify-center items-center">
@@ -33,4 +25,4 @@
     </div>
   </div>
   <!-- --End Home Hero --  -->
-</div>
+</template>
