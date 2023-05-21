@@ -1,7 +1,11 @@
-//  =========== Basicly Vue.js syntax ======== 
-//  <script setup>
-// import NavBar from "../components/NavBar.vue";
-// </script>
+
+<script setup>
+
+useHead({
+  title: "Cartrader",
+});
+
+</script>
 
 <template>
   <div>
