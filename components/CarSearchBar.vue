@@ -1,12 +1,15 @@
 <script setup>
   const city = ref(''); 
-  
+  const cityError = ref(false); 
+
   const handleSearch = () => {
+      if(!city.value){
+        return cityError.vue = true 
+      }
     navigateTo(`/city/${city.value}/car/`);
   }
 
 </script>
-
 
 
 <template>
@@ -19,6 +22,7 @@
       class="py-3 px-5 w-full text-2xl rounded-4 focus:outline-none"
       placeholder="search by city.."
       v-model="city"
+      :class=" cityError ? 'border-red-500 border' : '' "
     />
     <button class="bg-sky-500 px-10 text-white" @click="handleSearch">Search</button>
   </div>
