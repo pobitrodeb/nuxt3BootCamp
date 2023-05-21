@@ -1,3 +1,15 @@
+<script setup>
+  const city = ref(''); 
+  const router = useRouter()
+  
+  const handleSearch = () => {
+    router.push(`/city/${city.value}/car/`); 
+  }
+
+</script>
+
+
+
 <template>
   <!-- ------ Home Search Bar ------  -->
   <div
@@ -6,9 +18,10 @@
     <input
       type="text"
       class="py-3 px-5 w-full text-2xl rounded-4 focus:outline-none"
-      placeholder="search by city"
+      placeholder="search by city.."
+      v-model="city"
     />
-    <button class="bg-sky-500 px-10 text-white">Search</button>
+    <button class="bg-sky-500 px-10 text-white" @click="handleSearch">Search</button>
   </div>
   <!-- ------ Home Search Bar ------  -->
 </template>
