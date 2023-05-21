@@ -1,9 +1,8 @@
 <script setup>
   const city = ref(''); 
-  const router = useRouter()
   
   const handleSearch = () => {
-    router.push(`/city/${city.value}/car/`); 
+    navigateTo(`/city/${city.value}/car/`);
   }
 
 </script>
